@@ -1,0 +1,14 @@
+<h1>ingresaste {{arreglo}} palabras</h1>
+
+<a href="{% url 'home'%}"> otra vez</a>
+<br>
+{{texto}}
+<br>
+
+{% for word , total in dicionario %}
+  {% if word != '-'%}
+
+<h2>{{word}} - {{total}}</h2>
+  {%endif%}
+
+{%endfor%}
